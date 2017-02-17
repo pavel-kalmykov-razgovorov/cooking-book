@@ -1,0 +1,8 @@
+md-toolbar img {
+    height: 100%;
+    width: auto;
+}
+
+.right-alignment-toolbar {
+  flex: 1 1 auto;
+}
