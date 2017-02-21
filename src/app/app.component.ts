@@ -8,5 +8,5 @@ import {MdIconRegistry} from '@angular/material';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  indexes: number[] = new Array(11);
 }

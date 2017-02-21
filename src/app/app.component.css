@@ -16,3 +16,11 @@ md-toolbar img {
   background-size: cover;
 
 }
+
+main {
+  margin: 2em;
+}
+
+main md-card {
+  margin-bottom: 1em;
+}
