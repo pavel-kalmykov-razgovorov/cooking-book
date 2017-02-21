@@ -1,10 +1,35 @@
 <md-toolbar color="primary">
   <img src="assets/img/logo.png" alt="logo">
   <h1>Cooking Book</h1>
-  <span class="right-alignment-toolbar"></span>
+  <span class="right-alignment-toolbar">
+    
+  </span>
+  <md-input-container floatPlaceholder="never">
+      <input mdInput placeholder="Search recipe">
+  </md-input-container>
   <a md-button routerLink=".">Novedades</a>
   <a md-button routerLink=".">Recetas</a>
   <p>|</p>
   <a md-button routerLink=".">Regístrate</a>
   <a md-button routerLink=".">Inicia Sesión</a>
 </md-toolbar>
+
+  <md-card class="example-card">
+    <md-card-header>
+      <div md-card-avatar class="example-header-image"></div>
+      <md-card-title>Ensalada Cesar</md-card-title>
+      <md-card-subtitle>Ensaladas</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image src="assets/img/ensaladaCesar.jpg">
+    <md-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>
+  </md-card>

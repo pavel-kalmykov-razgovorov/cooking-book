@@ -6,3 +6,13 @@ md-toolbar img {
 .right-alignment-toolbar {
   flex: 1 1 auto;
 }
+.example-card {
+  width: 15em;
+  margin: auto;
+}
+
+.example-header-image {
+  background-image: url('assets/img/ensaladaCesar.jpg');
+  background-size: cover;
+
+}
