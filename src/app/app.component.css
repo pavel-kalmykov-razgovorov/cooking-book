@@ -14,7 +14,6 @@ md-toolbar img {
 .example-header-image {
   background-image: url('assets/img/ensaladaCesar.jpg');
   background-size: cover;
-
 }
 
 main {
@@ -23,4 +22,8 @@ main {
 
 main md-card {
   margin-bottom: 1em;
+}
+
+md-card-actions label {
+  cursor: pointer;
 }
