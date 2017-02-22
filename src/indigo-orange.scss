@@ -1,0 +1,23 @@
+/**
+ * Import Indigo-Orange theme
+ */
+@import '~@angular/material/core/theming/all-theme';
+@include mat-core();
+$primary: mat-palette($mat-indigo);
+$accent:  mat-palette($mat-orange, A200, A100, A400);
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+
+/**
+ * Main, gobal styles
+ */
+html, body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+    width: 100%;
+}
+
+.accent-color {
+    color: mat-color($accent);
+}
