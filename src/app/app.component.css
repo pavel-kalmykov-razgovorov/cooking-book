@@ -7,8 +7,10 @@ md-toolbar img {
   flex: 1 1 auto;
 }
 .example-card {
-  width: 30em;
-  margin: auto;
+  width: 70em;
+  height: 30em;
+  margin-top: 2em;
+  margin-left: 4em;
 }
 
 .example-header-image {
@@ -17,13 +19,18 @@ md-toolbar img {
 }
 
 .image-left{
-  width:50%; 
+  width: 38%;
   float:left; 
   margin-left: 1em; 
   margin-top: 2em;
 }
 .text-margin-right{
-  margin-left: 20em;
+  margin-top: 2em;
+  margin-left: 34em;
+}
+.action-margin-right{
+  margin-top: 2em;
+  margin-left: 35em;
 }
 main {
   margin: 2em;
