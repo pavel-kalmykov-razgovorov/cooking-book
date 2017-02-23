@@ -5,18 +5,43 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PresentationComponent } from './presentation/presentation.component';
+import { RecipesFeedComponent } from './recipes-feed/recipes-feed.component';
+import { RecipesDetailsComponent } from './recipes-details/recipes-details.component';
 import 'hammerjs';
+
+const appRoutes: Routes = [
+  { path: 'feed-recetas', component: RecipesFeedComponent },
+  { path: 'receta/:id',      component: RecipesDetailsComponent },
+  {
+    path: 'presentacion',
+    component: PresentationComponent,
+    data: { title: 'Cooking Book - La red social de las recetas' }
+  },
+  { path: '',
+    redirectTo: '/presentacion',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    PresentationComponent,
+    RecipesFeedComponent,
+    RecipesDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

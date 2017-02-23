@@ -8,33 +8,9 @@
     <input mdInput placeholder="Search recipe">
   </md-input-container>-->
   <a md-button routerLink=".">Novedades</a>
-  <a md-button routerLink=".">Recetas</a>
+  <a md-button routerLink="/feed-recetas">Recetas</a>
   <p>|</p>
   <a md-button routerLink=".">Regístrate</a>
   <a md-button routerLink=".">Inicia Sesión</a>
 </md-toolbar>
-<main fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
-  <md-card class="example-card" *ngFor="let index of indexes">
-    <md-card-header>
-      <img style="border-radius: 50%;" height="50em" width="50em" md-card-avatar src="assets/img/donald-trump.jpg">
-      <md-card-title class="accent-color">Pavel Razgovorov</md-card-title>
-      <md-card-subtitle>@paveltrufi</md-card-subtitle>
-    </md-card-header>
-    <img md-card-image class="image-left" src="assets/img/ensaladaCesar.jpg">
-    <md-card-content class="text-margin-right">
-      <h3>Ensalada César</h3>
-      <p>
-        La Ensalada César lleva muy pocos ingredientes (pollo, lechuga, picatostes y queso parmesano fundamentalmente) pero, gracias
-        a la Salsa César que preparamos el otro día, el sabor de esta ensalada es realmente estupendo y por eso no necesita
-        llevar muchos más ingredientes para conseguir una ensalada estupenda.
-      </p>
-    </md-card-content>
-    <md-card-actions class="text-margin-right">
-      <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
-      <label for="favorite">23</label>
-      <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
-      <label for="comment">7</label>
-      <button md-icon-button color="accent" id="share"><i class="material-icons">share</i></button>
-    </md-card-actions>
-  </md-card>
-</main>
+<router-outlet></router-outlet>

@@ -21,3 +21,10 @@ html, body {
 .accent-color {
     color: mat-color($accent);
 }
+
+.ejemplo {
+  background-size: cover;
+  width: 40px;
+  background-position: center;
+  border-radius: 50%;
+}
