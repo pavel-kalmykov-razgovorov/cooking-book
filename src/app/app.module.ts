@@ -14,7 +14,7 @@ import 'hammerjs';
 
 const appRoutes: Routes = [
   { path: 'feed-recetas', component: RecipesFeedComponent },
-  { path: 'receta/:id',      component: RecipesDetailsComponent },
+  { path: 'receta',      component: RecipesDetailsComponent },
   {
     path: 'presentacion',
     component: PresentationComponent,
