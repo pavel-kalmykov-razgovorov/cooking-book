@@ -7,29 +7,29 @@ md-toolbar img {
   flex: 1 1 auto;
 }
 .example-card {
-  width: 70em;
-  height: 30em;
+  width: 80%;
+ 
   margin-top: 2em;
   margin-left: 4em;
 }
 
-.example-header-image {
+.example-image {
   background-image: url('assets/img/ensaladaCesar.jpg');
   background-size: cover;
 }
 
 .image-left{
-  width: 38%;
-  float:left; 
+  width: 22em;
+  /*float: left;*/ 
   margin-left: 1em; 
-  margin-top: 2em;
+ 
+  
 }
-.text-margin-right{
-  margin-top: 2em;
+/*.text-margin-right{
   margin-left: 34em;
-}
+}*/
 .action-margin-right{
-  margin-top: 2em;
+  
   margin-left: 35em;
 }
 main {
