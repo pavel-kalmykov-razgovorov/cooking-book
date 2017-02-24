@@ -1,5 +1,24 @@
+ <md-sidenav-container>
 <md-toolbar color="primary">
+  <div fxLayout="row" fxHide="false" fxHide.gt-sm>
+  <md-sidenav #start mode="push" style="margin-top: 3em;">
+    <a md-button (click)="start.close()" fxHide="false" fxHide.gt-sm>
+      <h1><md-icon>home</md-icon></h1>
+    </a>
+    <a md-button [routerLink]="['/login']"><h1>Novedades</h1></a>
+    <br>
+    <a md-button [routerLink]="['/feed-recetas']">Recetas</a>
+    <br>
+    <a md-button [routerLink]="['/login']">Registrarte</a>
+    <br>
+    <a md-button [routerLink]="['/login']">Inicia Sesion</a>
+  </md-sidenav>
+  </div>
+  <button md-button (click)="start.open()" fxHide="false" fxHide.gt-sm>
+    <md-icon>menu</md-icon>
+  </button>
  <img src="assets/img/logo.svg" alt="logo">
+ 
   <h1 class="accent-color">Cooking Book</h1>
   <span class="right-alignment-toolbar">
     
@@ -7,10 +26,26 @@
   <!--<md-input-container floatPlaceholder="never">
     <input mdInput placeholder="Search recipe">
   </md-input-container>-->
-  <a md-button routerLink=".">Novedades</a>
-  <a md-button routerLink="/feed-recetas">Recetas</a>
+  
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+  <button md-button routerLink=".">Novedades</button>
+  <button md-button routerLink="/feed-recetas">Recetas</button>
   <p>|</p>
-  <a md-button routerLink=".">Regístrate</a>
-  <a md-button routerLink=".">Inicia Sesión</a>
+  <button md-button routerLink=".">Regístrate</button>
+  <button md-button routerLink=".">Inicia Sesión</button>
+  </div>
+  
+    
 </md-toolbar>
+
+ 
+  
+<!--<md-menu x-position="before" #menu="mdMenu">
+    <button md-menu-item routerLink=".">Novedades</button>
+    <button md-menu-item routerLink="/feed-recetas">Recetas</button>
+    <button md-menu-item routerLink=".">Regístrate</button>
+    <button md-menu-item routerLink=".">Inicia Sesion</button>
+</md-menu>-->
+
 <router-outlet></router-outlet>
+</md-sidenav-container>
