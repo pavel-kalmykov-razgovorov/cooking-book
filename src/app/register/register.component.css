@@ -1,7 +1,6 @@
 .example-card {
-  width: 20em;
+  width: 40%;
   margin: auto;
-  align-items: center;
 }
 
 /*
@@ -27,4 +26,11 @@ main md-card {
 
 md-card-actions label {
   cursor: pointer;
+}
+.example-form {
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }

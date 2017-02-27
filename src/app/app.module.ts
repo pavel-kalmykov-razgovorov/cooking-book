@@ -10,11 +10,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { PresentationComponent } from './presentation/presentation.component';
 import { RecipesFeedComponent } from './recipes-feed/recipes-feed.component';
 import { RecipesDetailsComponent } from './recipes-details/recipes-details.component';
+import { RegisterComponent } from './register/register.component';
 import 'hammerjs';
 
 const appRoutes: Routes = [
   { path: 'feed-recetas', component: RecipesFeedComponent },
   { path: 'receta',      component: RecipesDetailsComponent },
+  { path: 'register',      component: RegisterComponent },
   {
     path: 'presentacion',
     component: PresentationComponent,
@@ -33,7 +35,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     PresentationComponent,
     RecipesFeedComponent,
-    RecipesDetailsComponent
+    RecipesDetailsComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
