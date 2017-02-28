@@ -1,5 +1,5 @@
-<main fxLayout="row" fxLayoutAlign="space-around center" fxLayoutWrap>
-  <md-card routerLink="/receta" class="example-card" *ngFor="let index of indexes">
+<main fxLayout="row" fxLayoutAlign="start start" fxLayoutWrap>
+  <md-card routerLink="/receta" class="example-card" *ngFor="let receta of recetas">
     <div>
       <div fxLayout="column" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
         <div fxFlex>
@@ -12,12 +12,8 @@
         </div>
         <div fxFlex>
       <md-card-content style="margin-left: 2em; margin-top: 2em;">
-        <h3>Ensalada César</h3>
-        <p>
-          La Ensalada César lleva muy pocos ingredientes (pollo, lechuga, picatostes y queso parmesano fundamentalmente) pero, gracias
-          a la Salsa César que preparamos el otro día, el sabor de esta ensalada es realmente estupendo y por eso no necesita
-          llevar muchos más ingredientes para conseguir una ensalada estupenda.
-        </p>
+        <h3>{{ receta.nombre }}</h3>
+        <p>{{ receta.descripcion }}</p>
       </md-card-content>
       <md-card-actions>
         <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
