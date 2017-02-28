@@ -17,7 +17,7 @@ import { NewsComponent } from './news/news.component';
 const appRoutes: Routes = [
   { path: 'novedades', component: NewsComponent},
   { path: 'feed-recetas', component: RecipesFeedComponent },
-  { path: 'receta',      component: RecipesDetailsComponent },
+  { path: 'receta/:id',      component: RecipesDetailsComponent },
   { path: 'registro',      component: RegisterComponent },
   {
     path: 'presentacion',

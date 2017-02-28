@@ -14,28 +14,22 @@
       <md-card-content>
       
         <md-tab-group>
-          <md-tab label="Descripcion">
-            <h3>Ensalada César</h3>
+          <md-tab label="Instrucciones">
+            <h3>{{ receta.nombre }}</h3>
             <p>
-              La Ensalada César lleva muy pocos ingredientes (pollo, lechuga, picatostes y queso parmesano fundamentalmente) pero, gracias
-              a la Salsa César que preparamos el otro día, el sabor de esta ensalada es realmente estupendo y por eso no necesita
-              llevar muchos más ingredientes para conseguir una ensalada estupenda.
+              {{ receta.descripcion }}
             </p>
           </md-tab>
           <md-tab label="Autor">
-            <h3>Ensalada César</h3>
+            <h3>{{receta.autor}}</h3>
             <p>
-              La Ensalada César lleva muy pocos ingredientes (pollo, lechuga, picatostes y queso parmesano fundamentalmente) pero, gracias
-              a la Salsa César que preparamos el otro día, el sabor de esta ensalada es realmente estupendo y por eso no necesita
-              llevar muchos más ingredientes para conseguir una ensalada estupenda.
+              {{receta.biografia}}
             </p>
           </md-tab>
-          <md-tab label="Comentarios">
-            <h3>Ensalada César</h3>
+          <md-tab label="Reacciones">
+            <h3>Comentarios y valoraciones</h3>
             <p>
-              La Ensalada César lleva muy pocos ingredientes (pollo, lechuga, picatostes y queso parmesano fundamentalmente) pero, gracias
-              a la Salsa César que preparamos el otro día, el sabor de esta ensalada es realmente estupendo y por eso no necesita
-              llevar muchos más ingredientes para conseguir una ensalada estupenda.
+              {{receta.comentarios}}
             </p>
           </md-tab>
         </md-tab-group>
