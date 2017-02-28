@@ -1,19 +1,38 @@
 md-toolbar img {
-    height: 150%;
-    width: auto;
+  height: 70%;
+  width: auto;
+  margin: 0 5px 0 20px;
 }
 
 .right-alignment-toolbar {
   flex: 1 1 auto;
 }
 
+md-sidenav md-list-item {
+  cursor: pointer;
+}
+
+md-sidenav md-list-item md-icon {
+  height: 24px;
+}
+
+md-sidenav img {
+  width: 5em;
+  display: block;
+  margin: 1em auto;
+}
+
 #menu-toggle {
   display: none;
 }
 
-#horizontal-menu { display: inherit; }
+md-toolbar .horizontal-menu { display: inherit; }
 
 @media screen and (max-width: 768px) {
-    #menu-toggle { display: inherit; }
-    #horizontal-menu { display: none }
+  #menu-toggle { display: inherit; }
+  md-toolbar .horizontal-menu { display: none }
+}
+
+@media screen and (max-width: 480px) {
+  md-toolbar img { margin: 0 0 0 10px; }
 }

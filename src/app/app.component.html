@@ -1,19 +1,39 @@
 <md-sidenav-container>
   <md-sidenav #sidenav mode="over" align="start">
-    HOLA
+    <img src="assets/img/logo.svg" alt="logo">
+    <md-list>
+      <h1 md-subheader>Menú</h1>
+      <md-list-item routerLink="/novedades" (click)="sidenav.toggle()">
+        <md-icon md-list-avatar color="accent">fiber_new</md-icon>
+        <h4 md-line>Novedades</h4>
+      </md-list-item>
+      <md-list-item routerLink="/feed-recetas" (click)="sidenav.toggle()">
+        <md-icon md-list-avatar color="accent">receipt</md-icon>
+        <h4 md-line>Recetas</h4>
+      </md-list-item>
+      <md-divider></md-divider>
+      <md-list-item routerLink="/login" (click)="sidenav.toggle()">
+        <md-icon md-list-avatar color="accent">person</md-icon>
+        <h4 md-line>Inicia Sesión</h4>
+      </md-list-item>
+      <md-list-item routerLink="/registro" (click)="sidenav.toggle()">
+        <md-icon md-list-avatar color="accent">person_add</md-icon>
+        <h4 md-line>Regístrate</h4>
+      </md-list-item>
+    </md-list>
   </md-sidenav>
   <md-toolbar color="primary">
-    <a id="menu-toggle" (click)="sidenav.toggle()" style="cursor: pointer"><md-icon>menu</md-icon></a>
-    <img src="assets/img/logo.svg" alt="logo">
-    <h1 class="accent-color">Cooking Book</h1>
+    <a id="menu-toggle" (click)="sidenav.toggle()" style="cursor: pointer">
+      <md-icon>menu</md-icon>
+    </a>
+    <img src="assets/img/logo.svg" alt="logo" routerLink=".">
+    <h1 class="accent-color" routerLink=".">Cooking Book</h1>
     <span class="right-alignment-toolbar"></span>
-    <span id="horizontal-menu">
-      <button md-button routerLink=".">Novedades</button>
-      <button md-button routerLink="/feed-recetas">Recetas</button>
-      <p>|</p>
-      <button md-button routerLink="/register">Regístrate</button>
-      <button md-button routerLink=".">Inicia Sesión</button>
-    </span>
+    <button class="horizontal-menu" md-button routerLink="/novedades">Novedades</button>
+    <button class="horizontal-menu" md-button routerLink="/feed-recetas">Recetas</button>
+    <p class="horizontal-menu">|</p>
+    <button class="horizontal-menu" md-button routerLink="/login">Inicia Sesión</button>
+    <button class="horizontal-menu" md-button routerLink="/registro">Regístrate</button>
   </md-toolbar>
   <router-outlet></router-outlet>
 </md-sidenav-container>

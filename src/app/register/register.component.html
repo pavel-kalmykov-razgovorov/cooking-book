@@ -1,52 +1,49 @@
-
-<md-card class="example-card">
-    
-    <img style="width: 60%; margin: auto;" src="assets/img/logo2.jpg">
-
+<main fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap>
+  <md-card class="example-card">
+    <img style="width: 60%; margin: auto;" src="assets/img/logo2.png">
     <h2>Formulario de Registro</h2>
     <!--<form class="example-form">-->
-        <div>
-            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput placeholder="Nombre" required>
-                    </md-input-container>
-                </div>
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput placeholder="Apellidos" required>
-                    </md-input-container>
-
-                </div>
-            </div>
-            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput placeholder="E-mail" required>
-                    </md-input-container>
-                </div>
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput placeholder="Nombre de usuario" required>
-                    </md-input-container>
-                </div>
-            </div>
-            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput type="password" placeholder="Contraseña" required>
-                    </md-input-container>
-                </div>
-                <div fxFlex>
-                    <md-input-container>
-                        <input mdInput type="password" placeholder="Repetir contraseña" required>
-                    </md-input-container>
-                </div>
-            </div>
+    <div>
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput placeholder="Nombre" required>
+          </md-input-container>
         </div>
- 
-        <br>
-        <button md-raised-button type="submit" (click)="onClick">Enviar</button>
-        
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput placeholder="Apellidos" required>
+          </md-input-container>
+
+        </div>
+      </div>
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput placeholder="E-mail" required>
+          </md-input-container>
+        </div>
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput placeholder="Nombre de usuario" required>
+          </md-input-container>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput type="password" placeholder="Contraseña" required>
+          </md-input-container>
+        </div>
+        <div fxFlex>
+          <md-input-container>
+            <input mdInput type="password" placeholder="Repetir contraseña" required>
+          </md-input-container>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button md-raised-button type="submit" (click)="onClick">Enviar</button>
     <!--</form>-->
   </md-card>
+</main>
