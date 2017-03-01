@@ -1,0 +1,46 @@
+.wrapper {
+    background: url('~/assets/img/header-presentation-blur.jpeg') top left;
+    background-size: contain;
+}
+
+h1, h2 {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-weight: 300;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    height: 50em;
+    padding: 0 1em 0 1em;
+    margin: auto;
+}
+
+.container iframe {
+    margin: 2em 0 2em 0;
+}
+
+.right-row {
+    margin-top: 10%;
+    width: 30em;
+    height: 80%;
+    background: url('~/assets/img/iphone_6_filled.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.tiles {
+    width: 100%;
+}
+
+@media screen and (max-width: 979px) {
+    .left-row {
+        margin-top: 15%;
+    }
+    .right-row {
+        height: 60%;
+    }
+}
