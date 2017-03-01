@@ -1,4 +1,3 @@
-
 <md-card class="example-card">
     <div>
       <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"> 
@@ -20,7 +19,7 @@
             <p>
               {{ receta.descripcion }}
             </p>
-            <button md-button (click)="user()" routerLink=".">Consulta</button>
+            <button md-button (click)="load()">Consulta</button>
           </md-tab>
           <md-tab label="Autor">
             <h3>{{receta.autor}}</h3>
