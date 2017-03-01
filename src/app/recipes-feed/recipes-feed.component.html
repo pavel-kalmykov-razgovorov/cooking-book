@@ -8,7 +8,7 @@
             <md-card-title class="accent-color">Pavel Razgovorov</md-card-title>
             <md-card-subtitle>@paveltrufi</md-card-subtitle>
           </md-card-header>
-          <img style="width: 100%; height: auto; margin-top: 2em; " src="assets/img/ensaladaCesar.jpg">
+          <img style="width: 100%; height: auto; margin-top: 2em; " src="{{receta.imagen}}">
         </div>
         <div fxFlex>
           <md-card-content style="margin-left: 2em; margin-top: 2em;">
@@ -17,9 +17,9 @@
           </md-card-content>
           <md-card-actions>
             <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
-            <label for="favorite">23</label>
+            <label for="favorite">{{ receta.likes }}</label>
             <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
-            <label for="comment">7</label>
+            <label for="comment">{{ receta.comentarios }}</label>
             <button md-icon-button color="accent" id="share"><i class="material-icons">share</i></button>
           </md-card-actions>
         </div>

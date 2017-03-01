@@ -9,21 +9,18 @@ import 'rxjs/add/operator/toPromise';
 })
 export class RecipesDetailsComponent implements OnInit {
 
-  private heroesUrl = '/server/recipes';  // URL to web api
-
-  private listeUrl = "http://localhost:4200";
-  constructor(private activatedRoute: ActivatedRoute,private http: Http) {   
-    if (window.location.href.startsWith(this.listeUrl)){
-      this.heroesUrl = "http://localhost:3000" + this.heroesUrl;
-    }
+  constructor(private activatedRoute: ActivatedRoute) {   
   }
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
       let id=params['id'];
       console.log(id);
     });
+     
+    
   }
   receta = {nombre: "Pavel Razgovorov", descripcion: ""}
- 
+  //receta=this.recetas[this.id-1];
+  
 }
 
