@@ -1,49 +1,39 @@
-<md-card class="example-card">
+<main>
+  <md-card class="example-card">
     <div>
-      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"> 
-      <div fxFlex style="margin-right: 5em">
-    <md-card-header>
-      <img style="border-radius: 50%;" height="50em" width="50em" md-card-avatar src="{{user.imagen}}">
-      <md-card-title class="accent-color">{{user.nombre}}</md-card-title>
-      <md-card-subtitle>{{user.nick}}</md-card-subtitle>
-    </md-card-header>
-    
-        <img md-card-image class="image-left" src="{{receta.imagen}}">
-      </div>
-      <div fxFlex>
-      <md-card-content>
-      
-        <md-tab-group>
-          <md-tab label="Instrucciones">
-            <h3>{{ receta.nombre }}</h3>
-            <p>
-              {{ receta.descripcion }}
-            </p>
-          </md-tab>
-          <md-tab label="Autor">
-            <h3>{{user.nombre}}</h3>
-            <p>
-              {{user.biografia}}
-            </p>
-          </md-tab>
-          <md-tab label="Reacciones">
-            <h3>Comentarios y valoraciones</h3>
-            <p>
-             
-            </p>
-          </md-tab>
-        </md-tab-group>
-      
-    
-      </md-card-content>
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+        <div fxFlex style="margin-right: 5em">
+          <md-card-header>
+            <img style="border-radius: 50%;" height="50em" width="50em" md-card-avatar src="{{user.imagen}}">
+            <md-card-title class="accent-color">{{user.nombre}}</md-card-title>
+            <md-card-subtitle>{{user.nick}}</md-card-subtitle>
+          </md-card-header>
+          <img md-card-image class="image-left" src="{{receta.imagen}}">
+        </div>
+        <div fxFlex>
+          <md-card-content>
+            <md-tab-group>
+              <md-tab label="Instrucciones">
+                <h3>{{ receta.nombre }}</h3>
+                <p>
+                  {{ receta.descripcion }}
+                </p>
+              </md-tab>
+              <md-tab label="Autor">
+                <h3>{{user.nombre}}</h3>
+                <p>
+                  {{user.biografia}}
+                </p>
+              </md-tab>
+              <md-tab label="Reacciones">
+                <h3>Comentarios y valoraciones</h3>
+                <p>
+                </p>
+              </md-tab>
+            </md-tab-group>
+          </md-card-content>
+        </div>
       </div>
     </div>
-    </div>
-    <!--<md-card-actions class="action-margin-right">
-      <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
-      <label for="favorite">23</label>
-      <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
-      <label for="comment">7</label>
-      <button md-icon-button color="accent" id="share"><i class="material-icons">share</i></button>
-    </md-card-actions>-->
   </md-card>
+</main>
