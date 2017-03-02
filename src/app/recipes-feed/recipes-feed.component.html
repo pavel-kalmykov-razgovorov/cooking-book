@@ -4,9 +4,10 @@
       <div fxLayout="column" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
         <div fxFlex>
           <md-card-header>
-            <div md-card-avatar class="ejemplo" style="background-image: url(assets/img/donald-trump.jpg)"></div>
-            <md-card-title class="accent-color">Pavel Razgovorov</md-card-title>
-            <md-card-subtitle>@paveltrufi</md-card-subtitle>
+            <!--<div md-card-avatar class="ejemplo" style="background-image: url(assets/img/donald-trump.jpg)"></div>-->
+            <img md-card-avatar class="ejemplo" src="{{receta.avatar}}">
+            <md-card-title class="accent-color">{{receta.autor}}</md-card-title>
+            <md-card-subtitle>{{receta.nick}}</md-card-subtitle>
           </md-card-header>
           <img style="width: 100%; height: auto; margin-top: 2em; " src="{{receta.imagen}}">
         </div>
