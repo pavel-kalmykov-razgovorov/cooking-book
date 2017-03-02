@@ -19,7 +19,8 @@ main md-card {
 }
 
 md-card div#register-send {
-  text-align: left;
+  text-align: right;
+  margin-right: 2em;
 }
 
 md-card-actions label {

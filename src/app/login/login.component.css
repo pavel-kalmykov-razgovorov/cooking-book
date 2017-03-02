@@ -22,6 +22,7 @@ main {
 
 main md-card {
   margin-bottom: 1em;
+  text-align: center;
 }
 
 md-card-actions label {
