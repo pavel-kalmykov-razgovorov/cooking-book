@@ -1,36 +1,39 @@
-.example-card {
+main md-card {
   width: 40%;
   margin: auto;
 }
 
-/*
-.image-left {
-  width:50%; 
-  float:left; 
-  margin-left: 1em; 
-  margin-top: 2em;
-}
-
-.text-margin-right {
-  margin-left: 20em;
-}
-*/
-
 main {
   margin: 2em;
+}
+
+main img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 20%;
+  display: block;
 }
 
 main md-card {
   margin-bottom: 1em;
 }
 
+md-card div#register-send {
+  text-align: left;
+}
+
 md-card-actions label {
   cursor: pointer;
 }
-.example-form {
-  width: 100%;
+
+@media screen and (max-width: 979px) {
+  main md-card {
+    text-align: center;
+  }
 }
 
-.example-full-width {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  main md-card {
+    width: 90%;
+  }
 }

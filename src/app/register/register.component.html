@@ -1,8 +1,7 @@
 <main fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap>
-  <md-card class="example-card">
-    <img style="width: 60%; margin-left: 20%;" src="assets/img/chef-register.svg">
+  <md-card>
+    <img src="assets/img/chef-register.svg">
     <h2>¡Únete a nosotros!</h2>
-    <!--<form class="example-form">-->
     <div>
       <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
         <div fxFlex>
@@ -14,7 +13,6 @@
           <md-input-container>
             <input mdInput placeholder="Apellidos" required>
           </md-input-container>
-
         </div>
       </div>
       <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
@@ -42,8 +40,8 @@
         </div>
       </div>
     </div>
-    <br>
-    <button md-raised-button type="submit" (click)="onClick">Enviar</button>
-    <!--</form>-->
+    <div id="register-send">
+      <button md-raised-button type="submit" (click)="onClick">Enviar</button>
+    </div>
   </md-card>
 </main>
