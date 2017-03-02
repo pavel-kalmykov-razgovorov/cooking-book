@@ -3,6 +3,10 @@
     background-size: contain;
 }
 
+.wrapper md-card {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 h1, h2, h3 {
     font-family: Roboto,"Helvetica Neue",sans-serif;
     font-weight: 300;
@@ -46,9 +50,11 @@ h1, h2, h3 {
 .cardAdv{
     width: 20em;
     height: 15em;
-    background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 1em;
 }
+
+.cardAdv h1 { margin-top: 5px; }
+
 @media screen and (max-width: 979px) {
     .left-row {
         margin-top: 15%;
