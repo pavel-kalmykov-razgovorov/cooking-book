@@ -1,0 +1,24 @@
+<main fxLayout="row" fxLayoutAlign="center center" fxLayoutWrap>
+  <md-card class="example-card">
+    <img style="width: 60%; margin-left: 20%;" src="assets/img/chef-login.svg">
+    <h2 style="text-align: center;">Entra</h2>
+    <div style="margin: auto;">
+    <div fxFlex>
+          <md-input-container>
+            <input mdInput placeholder="Nombre de usuario" required>
+          </md-input-container>
+    </div>
+         <br>
+         <div fxFlex>
+          <md-input-container>
+            <input mdInput type="password" placeholder="Contraseña" required>
+          </md-input-container>
+         </div>
+    <br>
+    </div>
+    <button style="margin-left: 40%;" md-raised-button (click)="openSnackBar()">Enviar</button>
+    
+    <!--</form>-->
+  </md-card>
+</main>
+

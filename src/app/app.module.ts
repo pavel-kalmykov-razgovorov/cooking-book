@@ -11,14 +11,17 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { RecipesFeedComponent } from './recipes-feed/recipes-feed.component';
 import { RecipesDetailsComponent } from './recipes-details/recipes-details.component';
 import { RegisterComponent } from './register/register.component';
+
 import 'hammerjs';
 import { NewsComponent } from './news/news.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   { path: 'novedades', component: NewsComponent},
   { path: 'feed-recetas', component: RecipesFeedComponent },
   { path: 'receta/:id',      component: RecipesDetailsComponent },
   { path: 'registro',      component: RegisterComponent },
+  { path: 'login',      component: LoginComponent },
   {
     path: 'presentacion',
     component: PresentationComponent,
@@ -39,7 +42,8 @@ const appRoutes: Routes = [
     RecipesFeedComponent,
     RecipesDetailsComponent,
     RegisterComponent,
-    NewsComponent
+    NewsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
