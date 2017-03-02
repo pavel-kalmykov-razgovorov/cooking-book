@@ -9,14 +9,14 @@
             <md-card-title class="accent-color">{{receta.autor}}</md-card-title>
             <md-card-subtitle>{{receta.nick}}</md-card-subtitle>
           </md-card-header>
-          <img style="width: 100%; height: auto; margin-top: 2em; " src="{{receta.imagen}}">
+          <img style="width: 100%; height: 13em; margin-top: 2em; " src="{{receta.imagen}}">
         </div>
         <div fxFlex>
-          <md-card-content style="margin-left: 2em; margin-top: 2em;">
+          <md-card-content style="height: 13em; margin-left: 2em; margin-top: 2em; overflow: scroll;">
             <h3>{{ receta.nombre }}</h3>
             <p>{{ receta.descripcion }}</p>
           </md-card-content>
-          <md-card-actions>
+          <md-card-actions >
             <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
             <label for="favorite">{{ receta.likes }}</label>
             <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
