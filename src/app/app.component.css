@@ -4,6 +4,11 @@ md-toolbar img {
   margin: 0 5px 0 20px;
 }
 
+md-toolbar img, md-toolbar h1, md-toolbar a, md-sidenav img {
+  cursor: pointer;
+  user-select: none;
+}
+
 .right-alignment-toolbar {
   flex: 1 1 auto;
 }

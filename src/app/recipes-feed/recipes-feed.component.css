@@ -1,6 +1,5 @@
 .example-card {
   width: 20em;
-  height: 35em;
   margin: auto;
   align-items: center;
 }
@@ -13,6 +12,38 @@ main md-card {
   margin-bottom: 1em;
 }
 
+main md-card md-card-content {
+  height: 11em;
+  margin-top: 0;
+  margin-right: -25px;
+  overflow-y: hidden;
+}
+
+main md-card md-card-content:hover {
+  margin-right: 0;
+  overflow-y: auto;
+}
+
 md-card-actions label {
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #777;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  display: none;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  height: 5px;
+  display: block;
 }

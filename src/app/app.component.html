@@ -1,6 +1,6 @@
 <md-sidenav-container>
   <md-sidenav #sidenav mode="over" align="start">
-    <img src="assets/img/logo.svg" alt="logo">
+    <img src="assets/img/logo.svg" alt="logo" (click)="sidenav.toggle()">
     <md-list>
       <h1 md-subheader>Menú</h1>
       <md-list-item routerLink="/novedades" (click)="sidenav.toggle()">
@@ -23,7 +23,7 @@
     </md-list>
   </md-sidenav>
   <md-toolbar color="primary">
-    <a id="menu-toggle" (click)="sidenav.toggle()" style="cursor: pointer">
+    <a id="menu-toggle" (click)="sidenav.toggle()">
       <md-icon>menu</md-icon>
     </a>
     <img src="assets/img/logo.svg" alt="logo" routerLink=".">

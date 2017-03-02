@@ -1,30 +1,23 @@
 <main fxLayout="row" fxLayoutAlign="start start" fxLayoutWrap>
   <md-card [routerLink]="['/receta', receta.id]" class="example-card" *ngFor="let receta of recetas">
-    <div>
-      <div fxLayout="column" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="coloredContainerX box">
-        <div fxFlex>
-          <md-card-header>
-            <!--<div md-card-avatar class="ejemplo" style="background-image: url(assets/img/donald-trump.jpg)"></div>-->
-            <img md-card-avatar class="ejemplo" src="{{receta.avatar}}">
-            <md-card-title class="accent-color">{{receta.autor}}</md-card-title>
-            <md-card-subtitle>{{receta.nick}}</md-card-subtitle>
-          </md-card-header>
-          <img style="width: 100%; height: 13em; margin-top: 2em; " src="{{receta.imagen}}">
-        </div>
-        <div fxFlex>
-          <md-card-content style="height: 13em; margin-left: 2em; margin-top: 2em; overflow: scroll;">
-            <h3>{{ receta.nombre }}</h3>
-            <p>{{ receta.descripcion }}</p>
-          </md-card-content>
-          <md-card-actions >
-            <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
-            <label for="favorite">{{ receta.likes }}</label>
-            <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
-            <label for="comment">{{ receta.comentarios }}</label>
-            <button md-icon-button color="accent" id="share"><i class="material-icons">share</i></button>
-          </md-card-actions>
-        </div>
-      </div>
-    </div>
+    <md-card-header>
+      <img md-card-avatar class="ejemplo" src="{{receta.avatar}}">
+      <md-card-title class="accent-color">{{receta.autor}}</md-card-title>
+      <md-card-subtitle>{{receta.nick}}</md-card-subtitle>
+    </md-card-header>
+    <img md-card-image style="height: 13em;" src="{{receta.imagen}}">
+    <md-card-content style="margin: 0">
+
+      <h3>{{ receta.nombre }}</h3>
+      <p>{{ receta.descripcion }}</p>
+
+    </md-card-content>
+    <md-card-actions>
+      <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>
+      <label for="favorite">{{ receta.likes }}</label>
+      <button md-icon-button color="accent" id="comment"><i class="material-icons">comment</i></button>
+      <label for="comment">{{ receta.comentarios }}</label>
+      <button md-icon-button color="accent" id="share"><i class="material-icons">share</i></button>
+    </md-card-actions>
   </md-card>
 </main>
