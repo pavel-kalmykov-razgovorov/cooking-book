@@ -24,8 +24,9 @@ main md-card md-card-content:hover {
   overflow-y: auto;
 }
 
-md-card-actions label {
+md-card-actions label, md-card img, md-card-content h3 {
   cursor: pointer;
+  user-select: none;
 }
 
 ::-webkit-scrollbar {

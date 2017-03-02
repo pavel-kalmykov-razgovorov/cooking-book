@@ -1,16 +1,14 @@
 <main fxLayout="row" fxLayoutAlign="start start" fxLayoutWrap>
-  <md-card [routerLink]="['/receta', receta.id]" class="example-card" *ngFor="let receta of recetas">
+  <md-card class="example-card" *ngFor="let receta of recetas">
     <md-card-header>
       <img md-card-avatar class="ejemplo" src="{{receta.avatar}}">
       <md-card-title class="accent-color">{{receta.autor}}</md-card-title>
       <md-card-subtitle>{{receta.nick}}</md-card-subtitle>
     </md-card-header>
-    <img md-card-image style="height: 13em;" src="{{receta.imagen}}">
+    <img md-card-image style="height: 13em;" src="{{receta.imagen}}" [routerLink]="['/receta', receta.id]">
     <md-card-content style="margin: 0">
-
-      <h3>{{ receta.nombre }}</h3>
+      <h3 [routerLink]="['/receta', receta.id]">{{ receta.nombre }}</h3>
       <p>{{ receta.descripcion }}</p>
-
     </md-card-content>
     <md-card-actions>
       <button md-icon-button color="accent" id="favorite"><i class="material-icons">favorite_border</i></button>

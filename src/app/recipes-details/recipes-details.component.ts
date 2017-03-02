@@ -37,7 +37,7 @@ export class RecipesDetailsComponent implements OnInit {
   {nombre: "Joaquin Anton", nick: "joaquin_95", biografia: "Estudiante de Ingenieria Informatica que bebe muchísima agua.",imagen: "../assets/img/Boo.png"},
   {nombre: "Pavel Razgovorov", nick: "paveltrufi", biografia: "Mafioso ruso amigo de Vladimir Putin y Donald Trump, es amante de la pizza con piña.",imagen: "../assets/img/donald-trump.jpg"},
   {nombre: "Pedro Moya", nick: "pepo", biografia: "Rapero de profesion, cocinero en sus ratos libres con una falda escocesa.",imagen: "../assets/img/eminem.jpg"},
-  {nombre: "Jorge Poveda", nick: "pove", biografia: "Estudiante de Ingenieria Informatica que rie a todas horas",imagen: "../assets/img/gato.png"},
+  {nombre: "Jorge Poveda", nick: "pove", biografia: "Estudiante de Ingenieria Informatica que rie a todas horas",imagen: "../assets/img/gato.jpg"},
   {nombre: "Jose Domenech", nick: "JDLK7", biografia: "Estudiante de Ingenieria Informatica que bebe cantidades desorbitadas de cerveza.",imagen: "../assets/img/oso.jpeg"}];
   
   
